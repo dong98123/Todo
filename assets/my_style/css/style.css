@@ -23,6 +23,12 @@
           align-items: center;
 }
 
+.line-throught {
+  -webkit-text-decoration: line-through red 2px;
+          text-decoration: line-through red 2px;
+  background-color: #feb506;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;

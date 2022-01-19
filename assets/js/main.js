@@ -104,6 +104,12 @@ function render() {
 			ToDoList[i] = { ...newElement };
 		};
 	});
+	check_btns.forEach((element, i) => {
+		element.onclick = () => {
+			descs[i].classList.add("line-throught");
+			titles[i].classList.add("line-throught");
+		};
+	});
 }
 render();
 
