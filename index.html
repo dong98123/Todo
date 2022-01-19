@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Todo</title>
+		<link rel="shortcut icon" type="image/x-icon" href="./assets/tiger.png" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+			integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="./assets/my_style/css/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="add--todo">
+				<form action="" method="post" class="add--todo--form d-flex">
+					<div class="form-group title-wrapper">
+						<input id="title" type="text" class="text-box" placeholder="Add your tasks ..." tabindex="1" />
+					</div>
+					<div class="form-group desc-wrapper">
+						<textarea placeholder="description ..." name="" id="desc" class="text-box" cols="30" rows="2" tabindex="2" maxlength="50"></textarea>
+						<button type="submit" class="btn-add btn"><i class="fas fa-plus"></i></button>
+					</div>
+				</form>
+			</div>
+			<div class="todo-wrapper row"></div>
+		</div>
+
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>
