@@ -47,6 +47,9 @@ $bg5: #e4c4c9;
 .d-block {
 	display: block;
 }
+.text-end {
+	text-align: end;
+}
 .center {
 	display: flex;
 	justify-content: space-around;
@@ -86,6 +89,10 @@ $bg5: #e4c4c9;
 .form-group {
 	margin-top: 10px;
 	position: relative;
+	width: 100%;
+	@include md {
+		width: 60%;
+	}
 }
 
 .container {
@@ -101,8 +108,14 @@ $bg5: #e4c4c9;
 		width: 60%;
 		margin: auto;
 		&--form {
-			width: 60%;
+			width: 100%;
 			justify-content: space-between;
+			@include md {
+				width: 80%;
+			}
+			@include xl {
+				width: 60%;
+			}
 			.desc-wrapper {
 				.btn-add {
 					background-color: transparent;
@@ -137,6 +150,7 @@ $bg5: #e4c4c9;
 		padding-top: 30px;
 		display: flex;
 		justify-content: center;
+
 		.todo_item_wrapper {
 			margin: 10px;
 			&:nth-child(5n) {

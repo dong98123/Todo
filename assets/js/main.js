@@ -7,7 +7,7 @@ const title_wrapper = document.querySelector(".title-wrapper");
 const btn_add_wrapper = document.querySelector(".btn-wrapper");
 const todo_wrapper = document.querySelector(".todo-wrapper");
 const date = new Date();
-let time = {
+const time = {
 	day: () => {
 		if (date.getDay() < 10) {
 			return `0${date.getDay()}`;
@@ -57,6 +57,7 @@ function render() {
 	let html = `
     ${ToDoList.map(
 			(todo, index) => `<div class = 'todo_item_wrapper'><div class="todo_item">
+			<div class = 'text-end '><small> ${time.hour()}:${time.minute()}</small></div>
                     <div class = 'bg-transparent'><textarea  readonly class="title bg-transparent" cols =20 rows ='1'>${todo.title}</textarea></div>
                     <div class = 'bg-transparent'><textarea class="desc bg-transparent" readonly cols="20" rows="3">${todo.desc}</textarea></div>
                     <div class = 'row center'>

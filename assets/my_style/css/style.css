@@ -12,6 +12,10 @@
   display: block;
 }
 
+.text-end {
+  text-align: end;
+}
+
 .center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,6 +71,13 @@
 .form-group {
   margin-top: 10px;
   position: relative;
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .form-group {
+    width: 60%;
+  }
 }
 
 .container {
@@ -88,10 +99,22 @@
 }
 
 .container .add--todo--form {
-  width: 60%;
+  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (min-width: 720px) {
+  .container .add--todo--form {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container .add--todo--form {
+    width: 60%;
+  }
 }
 
 .container .add--todo--form .desc-wrapper .btn-add {
